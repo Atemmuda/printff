@@ -17,4 +17,4 @@ What you should learn from this project:
 
 ## Authors
 1. [Nathaniel Kankam](https://github.com/Atemmuda/)
-2. [Joshua Adu Mensah]([https://github.com/Atemmuda/](https://github.com/joshuaadu))
+2. [Joshua Adu Mensah](https://github.com/joshuaadu)
