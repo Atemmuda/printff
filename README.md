@@ -14,3 +14,7 @@ What you should learn from this project:
 * Applying variadic functions to a big project
 * The complexities of printf
 * Managing a lot of files and finding a good workflow
+
+## Authors
+[Nathaniel](https://github.com/Atemmuda/)
+[Joshua](https://github.com/Atemmuda/)
