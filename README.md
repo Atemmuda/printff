@@ -16,5 +16,5 @@ What you should learn from this project:
 * Managing a lot of files and finding a good workflow
 
 ## Authors
-[Nathaniel](https://github.com/Atemmuda/)
-[Joshua](https://github.com/Atemmuda/)
+1. [Nathaniel](https://github.com/Atemmuda/)
+2. [Joshua](https://github.com/Atemmuda/)
