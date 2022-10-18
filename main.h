@@ -29,7 +29,7 @@ int print_char(va_list list, flags_tag *f);
 
 int print_percent(va_list list, flags_tag *f);
 
-
+/*print_numbers*/
 int print_int(va_list list, flags_tag *f);
 int count_digit(int i);
 void print_number(int n);
