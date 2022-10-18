@@ -21,15 +21,16 @@ What you should learn from this project:
 * Prototype: int _printf(const char *format, ...);
 * Returns: the number of characters printed (excluding the null byte used to end output to strings)
 * write output to stdout, the standard output stream
-* format is a character string. The format string is composed of zero or more directives. See man 3 printf for more  detail. You need to handle the following conversion specifiers:
-a. _c_
-b. _s_
-c. _%_
-i. _You don’t have to reproduce the buffer handling of the C library printf function_
-ii. _You don’t have to handle the flag characters_
-iii. _You don’t have to handle field width_
-iv. _You don’t have to handle precision_
-v. _You don’t have to handle the length modifiers_
+* format is a character string. The format string is composed of zero or more directives. See man 3 printf for more  detail. 
+1. You need to handle the following conversion specifiers:
+    1. _c_
+    2. _s_
+    3. _%_
+    4. _You don’t have to reproduce the buffer handling of the C library printf function_
+    5. _You don’t have to handle the flag characters_
+    6. _You don’t have to handle field width_
+    7. _You don’t have to handle precision_
+    8. _You don’t have to handle the length modifiers_
 
 ## Authors
 1. [Nathaniel Kankam](https://github.com/Atemmuda/)
