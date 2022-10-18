@@ -27,6 +27,7 @@ int print_char(va_list list, flags_tag *f);
 
 int print_percent(va_list list, flags_tag *f);
 
+/*write_functions*/
 int _putchar(char c);
 int _puts(char *str);
 
