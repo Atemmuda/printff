@@ -18,6 +18,7 @@ typedef struct selectPrintFn
     int (*f)(va_list ap, flags_tag *f);
 } spf;
 
+/* select_print.c */
 int select_flag(char s, flags_tag *f);
 
 int _printf(const char *format, ...);
@@ -25,7 +26,10 @@ int _printf(const char *format, ...);
 int print_string(va_list list, flags_tag *f);
 int print_char(va_list list, flags_tag *f);
 
+
 int print_percent(va_list list, flags_tag *f);
+
+int print_int(va_list l, flags_t *f);
 
 int _putchar(char c);
 int _puts(char *str);
