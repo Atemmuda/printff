@@ -2,6 +2,5 @@
 #define MAIN_H
 
 int _printf(const char *format, ...);
-int smoething(void);
 
 #endif
