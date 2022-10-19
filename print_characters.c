@@ -1,7 +1,17 @@
 #include "main.h"
-int print_string(va_list l, flags_tag *f)
+
+/**
+ * print_string - loops through a string and prints
+ * every character
+ * @list: va_list arguments from _printf
+ * @f: pointer to the struct flags that determines
+ * if a flag is passed to _printf
+ * Return: number of char printed
+ */
+
+int print_string(va_list list, flags_tag *f)
 {
-	char *s = va_arg(l, char *);
+	char *s = va_arg(list, char *);
 
 	(void)f;
 
@@ -10,9 +20,16 @@ int print_string(va_list l, flags_tag *f)
 	return (_puts(s));
 }
 
-int print_char(va_list l, flags_tag *f)
+/**
+ * print_char - prints a character
+ * @list: va_list arguments from _printf
+ * @f: pointer to the struct flags that determines
+ * if a flag is passed to _printf
+ * Return: number of char printed
+ */
+int print_char(va_list list, flags_tag *f)
 {
 	(void)f;
-	_putchar(va_arg(l, int));
+	_putchar(va_arg(list, int));
 	return (1);
 }

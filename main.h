@@ -21,6 +21,9 @@ typedef struct selectPrintFn
 /* select_flag.c */
 int select_flag(char s, flags_tag *f);
 
+/* select_print.c*/
+int (*select_print(char s))(va_list, flags_tag *);
+
 int print_string(va_list list, flags_tag *f);
 int print_char(va_list list, flags_tag *f);
 

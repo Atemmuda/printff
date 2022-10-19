@@ -1,8 +1,15 @@
 #include "main.h"
 
-int print_int(va_list l, flags_tag *f)
+/**
+ * print_int - prints an integer
+ * @list: va_list of arguments from _printf
+ * @f: pointer to the struct flags determining
+ * if a flag is passed to _printf
+ * Return: number of char printed
+ */
+int print_int(va_list list, flags_tag *f)
 {
-	int n = va_arg(l, int);
+	int n = va_arg(list, int);
 	int res = count_digit(n);
 
 	if (f->space == 1 && f->plus == 0 && n >= 0)
@@ -15,23 +22,34 @@ int print_int(va_list l, flags_tag *f)
 	return (res);
 }
 
-void print_number(int n)
+/**
+ * print_number - helper function that loops through
+ * an integer and prints all its digits
+ * @num: integer to be printed
+ */
+void print_number(int num)
 {
-	unsigned int n1;
+	unsigned int num1;
 
-	if (n < 0)
+	if (num < 0)
 	{
 		_putchar('-');
-		n1 = -n;
+		num1 = -num;
 	}
 	else
-		n1 = n;
+		num1 = num;
 
-	if (n1 / 10)
-		print_number(n1 / 10);
-	_putchar((n1 % 10) + '0');
+	if (num1 / 10)
+		print_number(num1 / 10);
+	_putchar((num1 % 10) + '0');
 }
 
+/**
+ * count_digit - returns the number of digits in an integer
+ * for _printf
+ * @i: integer to evaluate
+ * Return: number of digits
+ */
 int count_digit(int i)
 {
 	unsigned int d = 0;
