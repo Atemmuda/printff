@@ -5,17 +5,30 @@
 #include <stdio.h>
 #include <unistd.h>
 
+/**
+ * struct flags - struct containing flags to "turn on"
+ * when a flag specifier is passed to _printf()
+ * @plus: flag for the '+' character
+ * @space: flag for the ' ' character
+ * @hash: flag for the '#' character
+ */
 typedef struct flags
 {
-    int  plus;
-    int space;
-    int hash;
+	int  plus;
+	int space;
+	int hash;
 } flags_tag;
 
+/**
+ * struct selectPrintFn - struct to choose the right function depending
+ * on the format specifier passed to _printf()
+ * @c: format specifier
+ * @f: pointer to the correct printing function
+ */
 typedef struct selectPrintFn
 {
-    char c;
-    int (*f)(va_list ap, flags_tag *f);
+	char c;
+	int (*f)(va_list ap, flags_tag *f);
 } spf;
 
 /* select_flag.c */
@@ -40,4 +53,5 @@ int _puts(char *str);
 
 /* The target function */
 int _printf(const char *format, ...);
+
 #endif
